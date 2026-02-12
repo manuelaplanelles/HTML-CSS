@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #f5f5f0 0%, #e8e6e1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.portfolio-container {
+    background: #fafaf8;
+    width: 900px;
+    height: 700px;
+    padding: 80px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e8e6e1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Marco decorativo interior */
+.portfolio-container::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid #d4d2cb;
+    pointer-events: none;
+}
+
+/* CABECERA */
+
+.header {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 56px;
+    font-weight: 300;
+    letter-spacing: 12px;
+    color: #3a3a3a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 17px;
+    color: #7a7a7a;
+    line-height: 2;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+/* MENÚ PRINCIPAL CON FLEXBOX */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+    margin: 40px 0;
+}
+
+.menu-item {
+    position: relative;
+    color: #5a5a5a;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-bottom: 2px solid #b5a68e;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #3a3a3a;
+    border-bottom-color: #8a7a5e;
+}
+
+/* SUBMENÚ PRIMER NIVEL */
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fafaf8;
+    border: 1px solid #e8e6e1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    min-width: 220px;
+    margin-top: 0px;
+    padding-top: 10px;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-5px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.menu-item:hover .submenu,
+.submenu:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+/* Flecha decorativa del submenú */
+.submenu::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #e8e6e1;
+}
+
+/* Área invisible de conexión entre menu-item y submenu */
+.submenu::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: transparent;
+}
+
+/* ELEMENTOS DEL SUBMENÚ CON FLEXBOX */
+
+.submenu-item {
+    position: relative;
+    padding: 14px 25px;
+    color: #6a6a6a;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submenu-item:hover {
+    background: #f5f5f0;
+    color: #3a3a3a;
+    padding-left: 30px;
+}
+
+.submenu-item:nth-child(odd) {
+    background-color: #f5f5f0;
+}
+
+.submenu-item:nth-child(even) {
+    background-color: #fafaf8;
+}
+
+/* SUBMENÚ SEGUNDO NIVEL (ANIDADO) */
+
+.submenu-nested {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fafaf8;
+    border: 1px solid #e8e6e1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    margin-left: 5px;
+    z-index: 200;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.submenu-item:hover .submenu-nested {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.submenu-nested:hover {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.submenu-nested::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: transparent;
+}
+
+/* ELEMENTOS DEL SUBMENÚ ANIDADO */
+
+.submenu-nested-item {
+    padding: 10px 20px;
+    color: #7a7a7a;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-nested-item:hover {
+    background: #f5f5f0;
+    color: #3a3a3a;
+    padding-left: 25px;
+}
+
+.submenu-nested a.submenu-nested-item:nth-child(odd) {
+    background-color: #f5f5f0;
+}
+
+.submenu-nested a.submenu-nested-item:nth-child(even) {
+    background-color: #fafaf8;
+}
+
+/* Indicador de submenú (flecha) */
+.has-submenu::after {
+    content: '›';
+    font-size: 18px;
+    color: #b5a68e;
+    margin-left: auto;
+    padding-left: 15px;
+}
+
+/* PIE DE PÁGINA */
+
+.footer {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.divider {
+    width: 80px;
+    height: 1px;
+    background: #c4c2bb;
+    margin: 0 auto 25px;
+}
+
+.contact-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #b5a68e;
+    margin-bottom: 10px;
+}
+
+.contact {
+    font-size: 14px;
+    color: #8a8a8a;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.email {
+    color: #6a6a6a;
+    border-bottom: 1px solid #c4c2bb;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .portfolio-container {
+        width: 100%;
+        height: auto;
+        padding: 40px 30px;
+    }
+
+    .portfolio-container::before {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 36px;
+        letter-spacing: 6px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .menu-item {
+        font-size: 13px;
+    }
+
+    .decorative-circle,
+    .decorative-square {
+        display: none;
+    }
+}

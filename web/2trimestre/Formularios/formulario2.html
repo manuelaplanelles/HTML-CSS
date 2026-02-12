@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Métodos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main>
+        <form action="resultado.php" method="GET">
+            <h3>Búsqueda (GET)</h3>
+            <input type="text" name="query" placeholder="Buscar...">
+            <button type="submit">Enviar por GET</button>
+        </form>
+
+        <form action="resultado.php" method="POST">
+            <h3>Registro (POST)</h3>
+            <input type="email" name="email" placeholder="Correo electrónico">
+            <button type="submit">Enviar por POST</button>
+        </form>
+    </main>
+    <footer>
+        <p>Procesado por resultado.php</p>
+    </footer>
+</body>
+</html>

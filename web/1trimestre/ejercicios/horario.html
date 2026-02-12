@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<title>Horario 1º DAW</title>
+<style>
+
+  table {
+    font-family: "Calibri Light", Calibri, Arial, sans-serif;
+    background-color: white;
+    margin: 20px auto; /* centrada */
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  /* cabecera (días de la semana) */
+  th {
+    background-color: #9fb4c1; /* azul grisáceo */
+    color: white; /* texto blanco */
+    padding: 10px; /* espacio interno */
+    border-radius: 12px; /* esquinas redondeadas */
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* celdas normales */
+  td {
+    background-color: #e9eef2; /* gris clarito */
+    color: #3c4650; /* texto gris oscuro */
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    font-family: "Calibri Light", Calibri, Arial, sans-serif;
+  }
+
+  /* primera columna (horas) */
+  td:first-child {
+    background-color: #c7aa92; /* color tierra */
+    color: white;
+    font-weight: bold;
+  }
+</style>
+</head>
+
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th class="hora">HORA</th>
+      <th>LUNES</th>
+      <th>MARTES</th>
+      <th>MIÉRCOLES</th>
+      <th>JUEVES</th>
+      <th>VIERNES</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- 14:35–15:30 -->
+    <tr>
+      <td class="hora">14:35–15:30</td>
+      <td class="celda"></td>
+      <td class="celda"></td>
+      <td class="celda"></td>
+      <td class="celda"></td>
+      <td class="celda">Itinerario Personal para la Empleabilidad I</td>
+    </tr>
+
+    <!-- 15:30–16:25 -->
+    <tr>
+      <td class="hora">15:30–16:25</td>
+      <td class="celda">Inglés Profesional GS</td>
+      <td class="celda" rowspan="2">Itinerario Personal para la Empleabilidad I</td>
+      <td class="celda">Lenguajes de Marcas y SGI</td>
+      <td class="celda">Programación</td>
+      <td class="celda">Programación</td>
+    </tr>
+
+    <!-- 16:25–17:20 -->
+    <tr>
+      <td class="hora">16:25–17:20</td>
+      <td class="celda" rowspan="2">Bases de Datos</td>
+      <!-- (Martes ) -->
+      <td class="celda">Bases de Datos</td>
+      <td class="celda">Programación</td>
+      <td class="celda">Programación</td>
+    </tr>
+
+    <!-- 17:20–18:15 -->
+    <tr>
+      <td class="hora">17:20–18:15</td>
+      <!-- (Lunes ) -->
+      <td class="celda">Sistemas Informáticos</td>
+      <td class="celda">Bases de Datos</td>
+      <td class="celda">Lenguajes de Marcas y SGI</td>
+      <td class="celda">Sistemas Informáticos <small>(17:40–18:35)</small></td>
+    </tr>
+
+    <!-- Descanso -->
+    <tr>
+      <td class="hora">18:15–18:35</td>
+      <td class="descanso" colspan="5">DESCANSO</td>
+    </tr>
+
+    <!-- 18:35–19:30 -->
+    <tr>
+      <td class="hora">18:35–19:30</td>
+      <td class="celda">Bases de Datos</td>
+      <td class="celda">Inglés Profesional GS</td>
+      <td class="celda">Entornos de Desarrollo</td>
+      <td class="celda">Lenguajes de Marcas y SGI</td>
+      <td class="celda">Sistemas Informáticos</td>
+    </tr>
+
+    <!-- 19:30–20:25 -->
+    <tr>
+      <td class="hora">19:30–20:25</td>
+      <td class="celda" rowspan="2">Programación</td>
+      <td class="celda">Tutoría Primero</td>
+      <td class="celda">Entornos de Desarrollo</td>
+      <td class="celda">Sistemas Informáticos</td>
+      <td class="celda">Entornos de Desarrollo</td>
+    </tr>
+
+    <!-- 20:25–21:20 -->
+    <tr>
+      <td class="hora">20:25–21:20</td>
+      <td class="celda">Programación</td>
+      <td class="celda">Sistemas Informáticos</td>
+      <td class="celda">Proyecto Intermodular 1 de DAW</td>
+      <td class="celda"></td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>

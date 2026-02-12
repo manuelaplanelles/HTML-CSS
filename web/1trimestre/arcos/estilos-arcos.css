@@ -1,0 +1,120 @@
+/*márgen y padding*/ 
+*{ margin: 0px;  padding: 0px;}
+/*desplegar la página del borde superior*/ 
+body  { 
+    margin-top: 20px; background: #689cf1;
+} 
+ 
+/*monitores normales tamaño 1000px*/
+     @media(min-width: 1024px) and (max-width: 1920px) { 
+        #pagina { width:1000px;   } 
+    } 
+/*monitores grandes 24, 25, 27, 32'' tamaño 2000px*/
+    @media(min-width: 2560px)   
+    {
+        #pagina { width:2000px;   } 
+    }
+/*monitores antiguos y móviles*/
+    @media(max-width: 800px)   
+    {
+        #pagina { width:95%;   } 
+    }
+
+        .estilo-pagina
+    {
+        margin: auto;  
+        background: #ffffff; 
+    }
+
+/*barra de navegación*/
+    nav
+    {
+        background: #f76414;  
+        padding: 10px 50px; 
+    }
+    nav ul
+    {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        font: bold 15px verdana, sans-serif;
+    }
+    nav a
+    {
+        text-decoration:none;
+        color: white;
+    }
+    nav a:hover
+    {
+        color: #bcc0c6;
+    }
+    
+/*cabecera*/
+    header
+    {
+        background: #f1f1f1;
+    }
+    header img
+    {
+        width: 100%;
+    }
+
+/*section*/
+    section
+    {
+        padding: 20px; 
+        overflow: hidden;        /*para que el section crezca a la vez que las cajas*/ 
+    }
+    /*pie de página*/
+    footer
+    {
+       background: #f76414;   
+       font: bold 13px verdana, sans-serif;   
+       color: #ffffff;  
+       padding: 10px;  
+       text-align: center; 
+       clear: both;        /*para que el footer se ponga por debajo de las cajas*/  
+    }
+    /*crear el estilo para los textos*/
+    .normal
+    {
+        font: 14px verdana, sans-serif;   
+        text-align: justify;  
+        line-height: 25px;  /*interlineado*/ 
+    }
+    /*crear el estilo para los titulos*/
+    .titulo
+    {
+        font: bold 18px verdana, sans-serif;   
+        color: #f76414;  
+        line-height: 30px; 
+    }
+    /*crear el estilo para los elementos*/
+    .contenedor
+    {
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+    .elemento-texto 
+    { 
+        width: 55%; 
+    } 
+    .elemento-foto 
+    { 
+        width: 43%; 
+    }
+    .elemento-foto img{
+        width: 100%;
+    }
+    .texto-final{
+        width: 100%;
+    }
+    /*crear el estilo para la lista*/
+    section ul li
+    {
+        margin-left: 50px;
+    }
+
+    

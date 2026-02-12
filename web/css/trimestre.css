@@ -1,0 +1,348 @@
+/* ========================================
+   ESTILOS COMPARTIDOS PARA PÁGINAS DE TRIMESTRES
+   Usar en: 1er trimestre, 2do trimestre, 3er trimestre
+   ======================================== */
+
+/* FONDO Y CONFIGURACIÓN GENERAL */
+body {
+  background-color: #FDE7CF;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-bottom: 80px;
+}
+
+.contenedor {
+  margin: 0px auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* CABECERA */
+.cabecera {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cabecera h1 a {
+  color: #C63A1E;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 2px;
+  line-height: 1.1;
+  transition: color 0.3s ease;
+}
+
+.cabecera h1 a:hover {
+  color: #BF8313;
+}
+
+/* TÍTULO DEL TRIMESTRE */
+.titulo-trimestre {
+  text-align: center;
+  margin: 15px 0 25px;
+}
+
+.titulo-trimestre h2 {
+  background-color: #C63A1E;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 40px;
+  border-radius: 0;
+  display: block;
+  letter-spacing: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* MENÚ DE EJERCICIOS (Para 1er trimestre) */
+.menu-ejercicios {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.menu-ejercicios ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-ejercicios li {
+  margin-bottom: 10px;
+}
+
+.menu-ejercicios a {
+  display: block;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 3px;
+  border-left: 6px solid #C63A1E;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.menu-ejercicios a:hover {
+  background-color: #C63A1E;
+  color: #fff;
+  padding-left: 40px;
+}
+
+/* MENÚ DE PÁGINAS (Para 1er trimestre) */
+.menu-paginas {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.menu-paginas h3 {
+  color: #C63A1E;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu-paginas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-paginas li {
+  margin-bottom: 10px;
+}
+
+.menu-paginas a {
+  display: block;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 3px;
+  border-left: 6px solid #BF8313;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.menu-paginas a:hover {
+  background-color: #BF8313;
+  color: #fff;
+  padding-left: 40px;
+}
+
+/* MENÚ DE FORMULARIOS (Para 2do trimestre) */
+.menu-formularios {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.menu-formularios h3 {
+  color: #C63A1E;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu-formularios ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-formularios li {
+  margin-bottom: 10px;
+}
+
+.menu-formularios a {
+  display: block;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 3px;
+  border-left: 6px solid #4A90E2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.menu-formularios a:hover {
+  background-color: #4A90E2;
+  color: #fff;
+  padding-left: 40px;
+}
+
+/* MENÚ DE WORDPRESS (Para 2do trimestre) */
+.menu-wordpress {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.menu-wordpress h3 {
+  color: #C63A1E;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu-wordpress ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-wordpress li {
+  margin-bottom: 10px;
+}
+
+.menu-wordpress a {
+  display: block;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 3px;
+  border-left: 6px solid #21759B;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.menu-wordpress a:hover {
+  background-color: #21759B;
+  color: #fff;
+  padding-left: 40px;
+}
+
+/* MENÚ DE EXÁMENES (Para todos los trimestres) */
+.menu-examenes {
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.menu-examenes h3 {
+  color: #C63A1E;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu-examenes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-examenes li {
+  margin-bottom: 10px;
+}
+
+.menu-examenes a {
+  display: block;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 3px;
+  border-left: 6px solid #E74C3C;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.menu-examenes a:hover {
+  background-color: #E74C3C;
+  color: #fff;
+  padding-left: 40px;
+}
+
+/* CONTACTO (Footer fijo) */
+.contacto {
+  text-align: center;
+  color: #8B4513;
+  background-color: #C9A546;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.contacto p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.contacto a {
+  color: #8B4513;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+/* PIE DE PÁGINA (Footer fijo) */
+.pie {
+  background-color: #C63A1E;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.pie p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contenedor {
+    padding: 0 10px;
+  }
+
+  .titulo-trimestre h2 {
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    letter-spacing: 6px;
+  }
+
+  .menu-ejercicios a,
+  .menu-paginas a,
+  .menu-formularios a,
+  .menu-wordpress a,
+  .menu-examenes a {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .cabecera h1 a {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 40px;
+    background-color: #2d2d2d;
+    font-family: Verdana, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Vampire';
+    src: url('vampire.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#pagina {
+    width: 70%;
+    max-width: 1344px;
+    margin: auto;
+    background: #ffffff;
+}
+
+
+
+header {
+    background: #2d2d2d;
+    padding-bottom: 0;
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+nav {
+    background: #7aa428;
+    padding: 10px 50px;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    min-height: 400px;
+}
+
+
+
+h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Vampire', 'Courier New', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    color: #7aa428;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+
+#carta{
+    display: flex;
+}
+#carta .imagen-izq{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding-right: 15px;
+    margin-top: 50px;
+}
+
+#carta .imagen-izq img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+
+#galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table caption {
+    font-family: 'Vampire', 'Courier New', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    color: #7aa428;
+    text-align: left;
+    background-color: #f5f5f5;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background-color: #7aa428;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}

@@ -1,0 +1,358 @@
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Contenedor general */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: #0079bf;
+    color: white;
+    padding: 20px 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIÓN HERO */
+
+.hero {
+    background-color: #f4f5f7;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #172b4d;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #5e6c84;
+    margin-bottom: 30px;
+}
+
+.boton-principal {
+    display: inline-block;
+    background-color: #0079bf;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.boton-principal:hover {
+    background-color: #026aa7;
+}
+
+/* SECCIÓN DE VÍDEO */
+
+.seccion-video {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.seccion-video h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #172b4d;
+}
+
+.contenedor-video {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenedor-video iframe {
+    border-radius: 10px;
+}
+
+/* SECCIÓN DE PRECIOS */
+
+.seccion-precios {
+    padding: 60px 0;
+    background-color: #f4f5f7;
+}
+
+.seccion-precios h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #172b4d;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 18px;
+    color: #5e6c84;
+    margin-bottom: 50px;
+}
+
+.tabla-precios {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tarjeta-precio {
+    background-color: white;
+    border: 2px solid #dfe1e6;
+    border-radius: 10px;
+    padding: 40px 30px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.tarjeta-precio.destacada {
+    border-color: #0079bf;
+    transform: scale(1.05);
+}
+
+.etiqueta-popular {
+    background-color: #0079bf;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tarjeta-precio h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #172b4d;
+}
+
+.precio {
+    margin-bottom: 30px;
+}
+
+.cantidad {
+    font-size: 48px;
+    font-weight: bold;
+    color: #172b4d;
+}
+
+.periodo {
+    font-size: 18px;
+    color: #5e6c84;
+}
+
+.tarjeta-precio ul {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.tarjeta-precio li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f4f5f7;
+}
+
+.boton-precio {
+    display: block;
+    background-color: #0079bf;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton-precio:hover {
+    background-color: #026aa7;
+}
+
+/* SECCIÓN DE TESTIMONIOS */
+
+.seccion-testimonios {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.seccion-testimonios h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #172b4d;
+}
+
+.grid-testimonios {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.tarjeta-testimonio {
+    background-color: #f4f5f7;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.estrellas {
+    color: #ffd700;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-testimonio p {
+    font-size: 16px;
+    color: #5e6c84;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.autor strong {
+    display: block;
+    color: #172b4d;
+    margin-bottom: 5px;
+}
+
+.autor span {
+    color: #5e6c84;
+    font-size: 14px;
+}
+
+/* SECCIÓN DE CONTACTO */
+
+.seccion-contacto {
+    padding: 60px 0;
+    background-color: #f4f5f7;
+}
+
+.seccion-contacto h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #172b4d;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #172b4d;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfe1e6;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #0079bf;
+}
+
+.boton-enviar {
+    width: 100%;
+    background-color: #0079bf;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #026aa7;
+}
+
+/*  FOOTER */
+
+footer {
+    background-color: #172b4d;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlaces-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.enlaces-footer a:hover {
+    text-decoration: underline;
+}

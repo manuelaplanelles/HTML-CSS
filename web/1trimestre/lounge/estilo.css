@@ -1,0 +1,48 @@
+/* ESTILOS LOUNGE BAR 26 - VERSION COMPACTA */
+
+* { margin: 0; padding: 0; }
+
+body { margin-top: 20px; background: #0D8BA8; }
+
+/* tamaños responsive */
+@media(min-width: 1024px) and (max-width: 1920px) { #pagina { width: 670px; } }
+@media(min-width: 2560px) { #pagina { width: 900px; } }
+@media(max-width: 800px) { 
+    #pagina { width: 95%; }
+    .elemento-texto, .elemento-foto { width: 100%; float: none; }
+}
+
+#pagina { margin: auto; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.3); }
+
+/* fuente Vampire */
+@font-face { font-family: 'Vampire'; src: url('vampire.ttf') format('truetype'); }
+
+/* navegación */
+nav { background: #8B0000; padding: 10px 0; }
+nav ul { list-style: none; text-align: center; font: bold 15px verdana, sans-serif; }
+nav ul li { display: inline-block; }
+nav a { text-decoration: none; color: #fff; padding: 10px 20px; display: block; }
+nav a:hover { background: #A52A2A; }
+
+/* cabecera */
+header { background: #f1f1f1; }
+header img { width: 100%; display: block; }
+
+/* contenido */
+section { padding: 20px; overflow: hidden; }
+
+/* pie */
+footer { background: #8B0000; font: bold 13px verdana, sans-serif; color: #fff; padding: 20px; text-align: center; clear: both; }
+
+/* textos */
+h2 { font: normal 32px 'Vampire', Georgia, serif; color: #8B0000; margin: 15px 0; }
+p { font: 14px verdana, sans-serif; text-align: justify; line-height: 25px; margin-bottom: 15px; }
+b, strong { font-weight: bold; color: #8B0000; }
+
+/* layout */
+.contenedor, .elemento-texto { width: 60%; float: left; padding-right: 20px; box-sizing: border-box; }
+.elemento-foto { width: 35%; float: right; margin: 10px; border: 1px solid #ccc; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+.elemento-foto img { width: 100%; display: block; }
+
+/* limpiar floats */
+.contenedor:after, section:after { content: ""; display: table; clear: both; }
